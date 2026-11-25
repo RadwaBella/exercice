@@ -1,7 +1,7 @@
-function welcome(welcome) {
-    alert("Welwome to Morocco ! ")
+function hello() {
+    alert("Welcome to Morocco ! ")
 }
-function hello(){
+function  welcome(welcome){
     alert( "phone : 06......." +" " +"emaile : travelgo@gmail.com " )
 }
 function marrakech(){
@@ -14,6 +14,6 @@ function agadir(){
     alert("Do you want to book a trio to Agadir !")
 }
 function namee(){ 
-    let name=prompt("tapez your name !")
+    let name=prompt("tapez  name !")
     alert("Welcome " + name)
 }
