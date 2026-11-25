@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice en groupe</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="style.js"></script>
+    
 </head>
 <div>
-
-    <body>
-        <header class="bg-yellow-700    ">
+    <body class="bg-orange-100">
+        <!-- Hado Homa les links -->
+        <header class="bg-yellow-700  text-white  ">
             <nav class="flex items-center justify-between px-8 py-4 ">
                 <h1 class="font-bold">TravelGo.</h1>
                 <ul class="flex pl-30 gap-6  justify-center  w-2/4 ">
@@ -19,43 +21,62 @@
                     <li><a class="" href="http:// ">About</a></li>
 
                 </ul>
-                <a href="http://">contact</a>
+                <a href="http://" onclick="welcome(welcome)">contact</a>
             </nav>
         </header>
+        <!-- Hada Howa L Hero -->
         <main>
-            <img class="w-full h-" src="morocco.jpeg" alt="Discover Morocco ">
             <div>
-                <h1>Discover Morocco</h1>
-                <p>Your next adventure starts here.</p>
-                <h3>Get Started</h3>
+                <img class=" blur-[3px] w-full h-100 w-200 border-solid border-2 border-blue-900" src="MOROCCO.jpeg"
+                    alt="Discover Morocco ">
             </div>
-            <h1>Popular destinations</h1>
-            <div>
-                <img src="marrakech.jpg" alt="Marrekech city">
-                <p>Marrakech</p>
-                <p>500 DH </p>
-                <button>Book now</button>
-            </div>
-            <div>
-                <img src="Chefchaouen.jpg" alt="Chefchaouen city">
-                <p>Chefchaouen</p>
-                <p>700 DH</p>
-                <button>Book now </button>
+            <div class=" text-center relative -top-60 -mr-10 -mb-25 ">
+                <h1 class="text-4xl text-yellow-950 font-bold ">Discover Morocco</h1>
+                <p class="py-3 text-slate-900 ">Your next adventure starts here.</p>
+                <button class="bg-amber-100 text-yellow-900 px-2 py-1 rounded " onclick="hello()">Get Started</button>
             </div>
 
-            <div>
-                <img src="agadir.jpg" alt="Agadir city ">
-                <p>Agadir</p>
-                <p>600 DH</p>
-                <button>Book now </button>
+             <!-- Marrakech -->
+
+            <h1   class="text-center text-3xl pb-6 text-sky-900 font-bold">Popular destinations</h1>
+            <div class="flex gap-6 justify-center ">
+                <div class="bg-taupe-700 text-white  ">
+                    <img class=" w-full h-[200px] object-cover   " src="marrakech.jpg" alt="Marrekech city">
+                    <p class="text-center text-lg font-bold">Marrakech</p>
+                    <p class="pl-2 border-double border-2 mx-10 mt-3 text-center ">500 DH </p>
+                    <button class="text-white rounded bg-blue-900 px-1 ml-30 mt-4 mb-2  " onclick="marrakech()">Book now</button>
+                </div>
+                
+                <!-- chafchaouen -->
+
+                <div class="bg-taupe-700 text-white">
+                    <img class=" w-full h-[200px] object-cover group-hover:scale-110 duration-500 " src="chefchouan.jpg"
+                        alt="Chefchaouen city">
+                    <p class="text-center text-lg font-bold">Chefchaouen</p>
+                    <p class="pl-2 border-double border-2 mx-10 mt-3 text-center ">700 DH</p>
+                    <button  class=" text-white rounded bg-blue-900 px-1 ml-30 mt-4 mb-2 " onclick="chafchaouen()">Book now </button>
+                </div>
+                 
+                  <!-- Agadir -->
+
+                <div class="bg-taupe-700 text-white">
+                    <img class=" w-full h-[200px] object-cover" src="agadir.jpg" alt="Agadir city ">
+                    <p class="text-center text-lg font-bold ">Agadir</p>
+                    <p class="pl-2 border-double border-2 mx-10 mt-3 text-center   ">600 DH</p>
+                    <button  class="text-white rounded bg-blue-900 px-1 ml-35 mt-4 mb-2 " onclick="agadir()">Book now </button>
+                </div>
             </div>
-            <div>
+
+             <!-- Hada Howa L Rajlin -->
+
+            <div class="text-center mt-5 text-sky-900 ">
                 <h3>About us</h3>
                 <p>We help you discover beautiful destinations in Morocco</p>
+                <button class="text-white rounded bg-blue-900 px-1 ml-3 mt-2" onclick="namee()">Entrez your name</button>
             </div>
         </main>
-        <footer>
-            <p>&COPY;TravelGo</p>
+        <footer class="text-center text-sm bg-blue-900 text-white mt-2 ">
+            <p>&COPY; 2026 TravelGo</p>
         </footer>
     </body>
 </div>
